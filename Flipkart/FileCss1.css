@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration : none ;
+}
+
+#header{
+    background-color: azure;
+}
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col-1{
+    width: 60%;
+}
+
+.col-2{
+    width: 40%;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo img{
+    width: 90%;
+    margin-left : 20%;
+    margin-top: 12%;
+}
+
+.search{
+    width: 75%;
+    margin-left: 2.5%;
+}
+
+img{
+    width: 100%;
+}
+
+.search input[type="text"]{
+    width: 95%;
+    height: 30px;
+    border-radius: 2px;
+    border-color: transparent;
+    background-color: #F0F5FF;
+    background-image: url("https://icon-library.com/images/search-for-icon/search-for-icon-1.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 5%;
+    background-position-x: 1%;
+    background-size: 20px 20px;
+    margin-top: 2%;
+}
+
+ul li{
+    list-style: none;
+}
+
+.col-2 ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    font-weight: 500;
+    padding: 20px 2px;
+    font-size: large;
+    font: 1em sans-serif;
+}
+
+.col-2 ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+
+/* --------------------section-1 */
+
+#section-1{
+    background-color: #e6edfc;
+    margin-top: 1%;
+    padding: 1%;
+}
+
+#section-1 .product{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    margin-left: 6px;
+}
+
+#section-1 .product img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+#section-1 h4{
+    margin-top: 8px;
+    color: #000;
+    font-weight: 500;
+}
+
+#banner{
+    margin-top: 10px;
+}
+
+#maha-sale .container{
+    margin-bottom: 10px;
+}
+
+#maha-sale .row .prod{
+    display: inline-block;
+    width: 33%;
+    margin-left: 4px;
+}
+
+#maha-sale .prod img{
+    height: 280px;
+    width: 100%;
+}
+
+#section-2 {
+    background-color: #e6edfc;
+    padding: 1% 0;
+    margin-top: 1%;
+}
+
+#section-2 h2{
+    margin-left: 1.5em;
+    margin-bottom: 10px;
+}
+
+#section-2 h3{
+    margin-top: 10px;
+    color: #000;
+    font: 1em sans-serif;
+}
+
+#section-2 .product{
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    margin: 1% 2.2%;
+    border-radius: 2%;
+    position: relative;
+}
+
+#section-2 .product img{
+    height: 180px;
+    width: 160px;
+    margin-top: 20px;
+}
+
+.product .wishlist{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+}
+
+.product .p-img{
+    position: relative;
+}
+
+.product .addtc{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0px;
+    display: none;
+}
+
+.product .addtc button{
+    border: 1px solid blue;
+    background-color: blue;
+    color:#fff;
+
+    padding: 8px;
+    width: 100%;
+}
+.product:hover .addtc{
+    display: block;
+}
