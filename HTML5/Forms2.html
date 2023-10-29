@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms and Attributes</h1>
+    <!-- name : creates a variable through data can be indentified -->
+    <!-- autofocus : auto blinking at designated position -->
+    <!-- value : sets the by default value -->
+    <!-- readonly : can read the text only , no updation allowed -->
+    <!-- disabled -->
+    <!-- placeholder : gives hint to user about what should he enter -->
+    <form action="#">
+        <table>
+            <tr>
+                <td>Section</td>
+                <td>
+                    <input type="text" name="fname" placeholder="Your FName Here" value="FSA_A" readonly disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter First Name</td>
+                <td>
+                    <input type="text" name="fname" placeholder="Your FName Here" autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Last Name</td>
+                <td>
+                    <input type="text" name="sname" placeholder="Your SName Here" >
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Mail</td>
+                <td>
+                    <input type="email" name="Mail" placeholder="Your Mail Here" autofocus>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Enter DOB</td>
+                <td><input type="date"></td>
+            </tr>
+            
+            <tr>
+                <td>Age</td>
+                <td><input type="number" min="18" max="100"></td>
+            </tr>
+            <tr>
+                <td>Enter URL</td>
+                <td><input type="url"></td>
+            </tr>
+            <tr>
+                <td>ProgessBar</td>
+                <td>
+                    <progress max="100" value="70"></progress>
+                </td>
+            </tr>
+            <tr>
+                <td>Range</td>
+                <td><input type="range" max="100" value="20" onchange="op.value=value"></td>
+                <td>
+                    <output id="op"></output>
+                </td>
+            </tr>
+            <tr>
+                <td>Search</td>
+                <td><input type="search"></td>
+            </tr>
+
+
+            <tr>
+                <td>Enter Message</td>
+                <td>
+                    <textarea cols="10" rows="10"></textarea>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
