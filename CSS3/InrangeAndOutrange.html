@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        border-color: black;
+      }
+      input:in-range {
+        background-color: green;
+      }
+      input:out-of-range {
+        background-color: rgb(234, 88, 88);
+      }
+      input:in-range + .message::after {
+        content: "VALID AGE";
+      }
+      input:out-of-range + .message::after {
+        content: "INVALID AGE";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>InRange And Outrange</h1>
+
+    <form action="#">
+      Enter Age : <input type="number" min="18" max="60" />
+      <span class="message"></span>
+      <br />
+      <span>Age will be between 18 and 60</span>
+    </form>
+  </body>
+</html>

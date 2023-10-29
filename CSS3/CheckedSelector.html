@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 500px;
+            width: 500px;
+        }
+
+        #hide:checked ~img{
+            /* display: none; */
+            opacity: 0;
+        }
+
+        img{
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checked Selector</h1>
+    <input type="radio" id="hide" name="toggle">
+    <label for="hide">Hide</label>
+    <input type="radio" id="show" name="toggle">
+    <label for="show">show</label>
+
+    <hr>
+    <img src="duck.gif" alt="">
+</body>
+</html>
