@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 20%;
+        animation: car_anim 10s infinite linear;
+      }
+      @keyframes car_anim {
+        0% {
+          transform: translate(0px, 0px) rotate(0deg);
+        }
+        25% {
+          transform: translate(1000px, 0px) rotate(0deg);
+        }
+        30% {
+          transform: translate(1000px, 0px) rotate(90deg);
+        }
+        50% {
+          transform: translate(1000px, 500px) rotate(90deg);
+        }
+        55% {
+          transform: translate(1000px, 500px) rotate(180deg);
+        }
+        75% {
+          transform: translate(0px, 500px) rotate(180deg);
+        }
+        80%{
+            transform: translate(0px, 500px) rotate(270deg);
+        }
+        100% {
+          transform: translate(0px, 0px) rotate(270deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Moving Car</h1>
+    <img
+      src="https://s.clipartkey.com/mpngs/s/11-116979_image-of-car-clipart-top-view-top-view.png"
+      alt=""
+    />
+  </body>
+</html>

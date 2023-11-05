@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            border: 2px solid green;
+            width: 400px;
+            height: 520px;
+            margin: 0 auto;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+        }
+
+        img{
+            width: 70%;
+            height: 500px;
+        }
+
+        .front , .back{
+            transition-duration: 5s;
+        }
+        .back{
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+        }
+        .front{
+            backface-visibility: hidden;
+        }
+        .product:hover .front{
+            transform: rotateY(180deg);
+        }
+        .product:hover .back{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>FLIP EFFECT</h1>
+    <div class="product">
+        <div class="front">
+            <img src="/CSS3/Screenshot 2023-09-21 200506.png" alt="">
+        </div>
+        <div class="back">
+            <img src="/CSS3/Screenshot 2023-09-21 200517.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

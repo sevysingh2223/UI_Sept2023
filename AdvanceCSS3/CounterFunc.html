@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a::after{
+            content: " { " attr(title) " } ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Attr Attribute</h1>
+    <hr><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+
+        h1::after{
+            counter-increment: section;
+            content: " NUMBER " counter(section);
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter Function</h1>
+    <div id="section-1">
+        <h1>SECTION</h1>
+        <p>This is section 1.</p>
+    </div>
+    <div id="section-2">
+        <h1>SECTION</h1>
+        <p>This is section 2.</p>
+    </div>
+    <div id="section-3">
+        <h1>SECTION</h1>
+        <p>This is section 3.</p>
+    </div>
+</body>
+</html>

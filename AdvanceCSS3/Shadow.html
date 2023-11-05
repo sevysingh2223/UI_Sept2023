@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col{
+            display: inline-block;
+            width: 25%;
+            margin: 80px;
+            border: 2px solid goldenrod;
+            /* box-shadow: x y blur spread color; */
+            /* box-shadow: 10px 10px 15px 5px goldenrod; */
+            /* box-shadow: -10px -10px 15px 5px goldenrod; */
+        }
+        img{
+            width: 100%;
+        }
+
+        .col:hover{
+            box-shadow: -10px -10px 15px 5px goldenrod;
+        }
+
+        h1{
+            font-size: 5em;
+            text-align: center;
+        }
+
+        h1:hover{
+            text-shadow: 5px 5px 5px blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>BOX SHADOW</h1>
+    <div class="col">
+        <img src="/CSS3/duck.gif" alt="duck">
+    </div>
+    <div class="col">
+        <img src="/CSS3/duck.gif" alt="duck">
+    </div>
+    <div class="col">
+        <img src="/CSS3/duck.gif" alt="duck">
+    </div>
+</body>
+</html>

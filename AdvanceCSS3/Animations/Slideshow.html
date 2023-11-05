@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #banner{
+            height: 1000px;
+            width: calc(100vw - 20px);
+            border: 2px solid maroon;
+            animation: slideshow 10s infinite linear;
+            background-image: url("/CSS2/Parallaxeffect/2020.jpg");
+            background-size: 100% 100%;
+        }
+
+        @keyframes slideshow {
+            0%,20%{
+                background-image: url("/CSS2/Parallaxeffect/1930.jpg");
+            }
+            25%,45%{
+                background-image: url("/CSS2/Parallaxeffect/1940.jpg");
+            }
+            50%,80%{
+                background-image: url("/CSS2/Parallaxeffect/1950.jpg");
+            }
+            100%{
+                background-image: url("/CSS2/Parallaxeffect/1970.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Slideshow</h1>
+    <div id="banner"></div>
+</body>
+</html>
