@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            background-color: rgb(133, 177, 162);
+            border: 2px solid black;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3em;
+        }
+        img{
+            width: 70%;
+            height: 70%;
+            display: block;
+            margin: -10px 60px;
+        }
+
+        @media screen and (max-width : 1200px){
+            div{
+                background-color: brown;
+            }
+        }
+        @media screen and (max-width : 900px){
+            div{
+                background-color: rgb(42, 165, 89);
+            }
+            h1{
+                display: none;
+            }
+        }
+        @media  (768px <= width <= 1200px){
+            div{
+                background-color: rgb(165, 132, 42);
+            }
+            h1{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Media Query</h1>
+        <img src="/CSS2/Parallaxeffect/2020.jpg" alt="">
+    </div>
+</body>
+</html>

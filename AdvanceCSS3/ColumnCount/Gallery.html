@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row1{
+            display: grid;
+            height: 200px;
+            justify-content: space-evenly;
+
+            grid-template-columns: repeat(4,25%);
+        }
+        .row2{
+            display: grid;
+            height: 200px;
+            justify-content: space-between;
+            grid-template-columns: repeat(3,25%);
+        }
+        .col{
+            background-color: aquamarine;
+            border: 2px solid green;
+            margin: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="row1">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <div class="row2">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <div class="row1">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</body>
+</html>
