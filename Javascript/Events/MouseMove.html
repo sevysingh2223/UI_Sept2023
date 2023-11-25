@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 30px;
+            height: 30px;
+            border: 2px solid red;
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.onmousemove = animateMouse;
+
+        function animateMouse(){
+            var circle = document.createElement("div");
+            circle.className = "circle";
+            // console.log(document.body.appendChild(circle));
+            document.body.appendChild(circle);
+
+            circle.style.top = event.clientY +"px";
+            circle.style.left = event.clientX +"px";
+
+            circle.style.transition = "all 0.5s linear 0s";
+
+            circle.style.top = circle.offsetTop - 20 + "px";
+            circle.style.left = circle.offsetLeft - 20 + "px";
+
+            circle.style.opacity = 0;
+        }
+    </script>
+</body>
+</html>
